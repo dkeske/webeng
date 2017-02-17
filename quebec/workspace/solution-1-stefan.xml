@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE semesterPlan [
+<!ELEMENT note (personal, education, course*)>
+<!ELEMENT personal (name, family, birthday, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT family (#PCDATA)>
+<!ELEMENT birthday (day, month, year)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT address (street, number, code, city)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT education (semester, field?)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT field (#PCDATA)>
+<!ELEMENT course (name, time, room)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+]>

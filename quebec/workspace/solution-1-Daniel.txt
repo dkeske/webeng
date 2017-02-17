@@ -1,0 +1,69 @@
+Exercise 1: To which category or categories of the web applications belongs “Klips” https://klips.uni-koblenz-landau.de/. (1 points)
+Answer 1:
+KLIPS belongs to:
+-Portal oriented
+
+Exercise 2: What are the differences between Dom and SAX parsers? Please explain (2 differences). (2 points)
+Answer 2:
+1.SAX parsers can be faster then DOM. They stream the XML file and are event based, parsing one tag at a time. 
+2.DOM parsers create a tree structure from the XML file, alowing the user to go trought the tree and inspect elements. SAX parsers create no structure, but parse the XML document line by line and tell the user what it came across. 
+3. DOM parser always inspects and loads the whole XML file, without the regard of the size needed for the client. SAX parser can work with only a part of the file and never load the whole document. 
+
+"
+DOM parsers and SAX parsers work in different ways.
+A DOM parser creates a tree structure in memory from the input document and then waits for requests from client. But a SAX parser does not create any internal structure. Instead, it takes the occurrences of components of a input document as events, and tells the client what it reads as it reads through the input document.
+A DOM parser always serves the client application with the entire document no matter how much is actually needed by the client. But a SAX parser serves the client application always only with pieces of the document at any given time.
+With DOM parser, method calls in client application have to be explicit and forms a kind of chain. But with SAX, some certain methods (usually overriden by the cient) will be invoked automatically (implicitly) in a way which is called "callback" when some certain events occur. These methods do not have to be called explicitly by the client, though we could call them explicitly.
+"
+Exercise 3: Provide the sequence of events that would be handled when parsing the XML document below using a SAX parser. (3 points)
+<?xml version="1.0"?> 
+<note id="1.0"> 
+	<to>John</to> 
+	<from>Jenny</from> 
+	<heading>Reminder</heading> 
+	<body>Don't <b>forget</b> our meeting!</body> 
+</note>
+Answer 3:
+startDocument
+startElement, name=note, attribute id=1.0
+startElement, name=to
+textNode, data = "John"
+endElement, name=to
+startElement, name=from
+textNode, data = "Jenny"
+endElement, name=from
+startElement, name=heading
+textNode, data = "Reminder"
+endElement, name=heading
+...
+endElement
+endDocument
+
+Exercise 4: Provide a DTD for a XML document, which describes a student semester plan. Express the following rules in DTD.
+A student semester plan contains:
+• The personal information of the student, namely name, family, birthday (provided as day, month, year), and address (provided as street, number, code, city).
+• The educational information, namely semester (mandatory), and field of study (optional).
+• The registered course(s) and their relevant information, namely name of the course, time, and room.
+Answer 4:
+<!DOCTYPE semester_plan
+[
+<!ELEMENT semester_plan (personal,educational,registered)>
+<!ELEMENT personal (name,family,birthday,address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT family (#PCDATA)>
+<!ELEMENT birthday (day, month, year)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT address (street, number, code, city)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT educational (semester,field_of_study?)>
+<!ELEMENT registered_courses (course*)>
+<!ELEMENT course (course_name,course_time,course_room)>
+<!ELEMENT course_name (#PCDATA)>
+<!ELEMENT course_time (#PCDATA)>
+<!ELEMENT course_room (#PCDATA)>
+]>
