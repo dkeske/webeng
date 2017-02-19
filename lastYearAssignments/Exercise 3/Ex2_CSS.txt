@@ -1,0 +1,48 @@
+<style type="text/css">
+	table {
+		border: 1px solid black;
+	}
+	th {
+		border-bottom: 1px solid black;
+	}
+	tr:nth-child(even) {
+		background-color: blue;
+		color: white
+	}
+	tr:nth-child(3n) {
+		text-align: center;
+		font-weight: bold;
+	}
+	tr:last-child {
+		background-color: grey;
+	}
+</style>
+<table>
+    <tr>
+        <th>Table</th>
+    </tr>
+    <tr>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+    </tr>
+</table>

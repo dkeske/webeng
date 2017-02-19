@@ -1,0 +1,26 @@
+/* The table has a solid black border. */
+table{
+   border: 1px solid black;
+}
+
+/* The th element should have a solid black border at the bottom. */
+th{
+   border-bottom: 1px solid black;
+}
+
+/* Every td element in an even row should have a blue background and the text color should be white. */
+tr:nth-child(2n) {
+    background-color: blue;
+    color: white;
+}
+
+/*The td elements of every third row should be bold and the text should be in the middle of the td element.*/
+tr:nth-child(3n) {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*The td element of the last row should have a grey background.*/
+tr:last-child {
+    background-color: grey;
+}

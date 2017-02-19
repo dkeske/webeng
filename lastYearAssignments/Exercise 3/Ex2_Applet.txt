@@ -1,0 +1,35 @@
+import java.applet.*;
+import java.awt.*;
+
+public class Main extends Applet{
+    int width, height;
+
+    public void init() {
+        width = getSize().width;
+        height = getSize().height;
+        setBackground( Color.white );
+    }
+
+    public void paint( Graphics g ) {
+
+        int middleX = width/2;
+        int middleY = height/2;
+
+        int colorIntValue;
+
+        colorIntValue = Integer.parseInt( "A7A7A7",16);
+        g.setColor( new Color(colorIntValue) );
+        g.fillRect(middleX - 75 ,middleY - 75,150,150);
+
+        colorIntValue = Integer.parseInt( "5B9BD5",16);
+        g.setColor( new Color(colorIntValue) );
+        g.fillArc(middleX -85,middleY -85 ,170,170,0,360);
+
+
+        colorIntValue = Integer.parseInt( "ED7D31",16);
+        g.setColor( new Color(colorIntValue) );
+        g.fillRect(middleX - 65 ,middleY - 65,130,130);
+
+
+    }
+}
