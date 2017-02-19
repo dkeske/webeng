@@ -1,0 +1,1 @@
+Exercise-3 (10) (8) the pattern between view and controller and model and view is not mentioned,
