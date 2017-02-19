@@ -1,0 +1,31 @@
+For whoever is studying Web Eng, I think the exams here tend to be similar to past versions (so I have been told), something like this:
+
+1) Basic
+a. explain the component and notation of URL
+b. name and explain six stages in the spectrum of web application
+c. what's tcp socket, server socket
+2) Document
+a. when the xml formed, when is it valid?
+a. give a short xml fragment, ask the sequence event with SAX parser
+b. give two xml documents, ask are they conform XSD? if not, what's the error
+3) Technology
+a. an short example of how to use java script in html
+b. give a short code with java script, ask what would be shown
+c. what's ajax used for, and it's components
+4) Model
+a. what's the name of four kinds of model
+b. draw a class diagram about the topic of "exam"
+6) BPMN
+draw a picture a bout twice verification process of "purchase order"
+intermediate event should be used
+two kinds of sub-process should be used
+7) Web Service
+a. what's the different between Layer and Tier
+b. what's thin client, what's fat client
+c.
+😎 Quality Assurance and Security
+a. what's the six test technologies?
+b. what's the four aspects of web security?
+c. what's the difference between symmetric encryption and asymmetric encryption
+in additional:
+something about UWE, MVC, I forget the details...
