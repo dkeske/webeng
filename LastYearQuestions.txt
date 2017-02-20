@@ -8,8 +8,8 @@ a. give a short xml fragment, ask the sequence event with SAX parser
 a. what is a wellformed and valid XML document?
 b. given two xml documents and an XSD, do they conform XSD? if not, what's the error
 3) Technology
-a. an short example of how to use java script in html
-b. give a short code with java script, ask what would be shown. the code was focused on prototyping in javascript.
+a. an short example of how to use javascript in html
+b. give a short code with javascript, ask what would be shown. the code was focused on prototyping in javascript.
 c. what's ajax used for, and it's components
 4) Model
 a. what's the name of four kinds of model in UWE
